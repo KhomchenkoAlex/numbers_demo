@@ -1,7 +1,8 @@
 class Number(var intArray: IntArray) {
+
     fun getSum(): Int = this.intArray.sum()
     fun getSum(string: String): String = string.plus(this.getSum())
-    fun getSum(number: Int): Int = number + (this.getSum())
+    fun getSum(number: Int): Int = number + this.getSum()
 }
 
 fun main() {
